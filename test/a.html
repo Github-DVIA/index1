@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="../src/assets/js/me.js"></script>
+</head>
+<script>
+    for (i = 0; i <= document.getElementsByTagName("a").length; i++) {
+        document
+            .getElementsByTagName("a")
+        [i].setAttribute("href", url + ("?" + Math.ceil(Math.random() * 10000))); //输出该页面的所有链接。
+    }
+</script>
+
+<body>
+
+    <p>
+        <a href="http://www.microsoft.com/">本文本</a> 是一个指向本网站中的一个页面的链接。
+    </p>
+
+    <p><a href="http://www.microsoft.com/">本文本</a> 是一个指向万维网上的页面的链接。</p>
+
+</body>
+
+</html>
