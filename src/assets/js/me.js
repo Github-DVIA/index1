@@ -1,9 +1,8 @@
 setInterval(function () {
   //每5秒刷新一次图表
   //需要执行的代码写在这里
-  var url = document.getElementsByName("email")[0].value;
-  if (!new RegExp("^(http|https)").test(url)) url = "https://" + url;
-  document.getElementById("jump_to").setAttribute("action", url);
+  var url = document.getElementsByName("url")[0].value;
+  document.getElementById("acess").setAttribute("onclick",  "location.href='" + url + "'");
 }, 500);
 
 for (i = 0; i <= document.getElementsByTagName("a").length; i++) {
@@ -17,5 +16,3 @@ for (i = 0; i <= document.getElementsByTagName("a").length; i++) {
       ); //输出该页面的所有链接。
   }
 }
-// if (new RegExp("^(http|https)").test(cover))
-// ("?" + Math.ceil(Math.random() * 10000))
